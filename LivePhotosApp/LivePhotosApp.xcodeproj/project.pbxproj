@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		8310A1122ACCBCC400896B11 /* NRNG9365.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 8310A1102ACCBCC400896B11 /* NRNG9365.HEIC */; };
 		8310A1132ACCBCC400896B11 /* NRNG9365.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8310A1112ACCBCC400896B11 /* NRNG9365.MOV */; };
+		831593852AD3C36000CB67F6 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831593842AD3C36000CB67F6 /* ExportViewController.swift */; };
 		83BB8E312ACCB00000DDBC46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB8E302ACCB00000DDBC46 /* AppDelegate.swift */; };
 		83BB8E332ACCB00000DDBC46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB8E322ACCB00000DDBC46 /* SceneDelegate.swift */; };
 		83BB8E352ACCB00000DDBC46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB8E342ACCB00000DDBC46 /* ViewController.swift */; };
 		83BB8E382ACCB00000DDBC46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BB8E362ACCB00000DDBC46 /* Main.storyboard */; };
 		83BB8E3A2ACCB00200DDBC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BB8E392ACCB00200DDBC46 /* Assets.xcassets */; };
 		83BB8E3D2ACCB00200DDBC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BB8E3B2ACCB00200DDBC46 /* LaunchScreen.storyboard */; };
-		83BB8E452ACCB01F00DDBC46 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB8E442ACCB01F00DDBC46 /* ExportViewController.swift */; };
-		83BB8E472ACCB02600DDBC46 /* QuickTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB8E462ACCB02600DDBC46 /* QuickTimeHelper.swift */; };
 		83BB8E4A2ACCB09800DDBC46 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB8E492ACCB09800DDBC46 /* Photos.framework */; };
 		83BB8E4C2ACCB0A300DDBC46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB8E4B2ACCB0A300DDBC46 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -24,6 +23,7 @@
 /* Begin PBXFileReference section */
 		8310A1102ACCBCC400896B11 /* NRNG9365.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = NRNG9365.HEIC; sourceTree = "<group>"; };
 		8310A1112ACCBCC400896B11 /* NRNG9365.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = NRNG9365.MOV; sourceTree = "<group>"; };
+		831593842AD3C36000CB67F6 /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
 		83BB8E2D2ACCB00000DDBC46 /* LivePhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BB8E302ACCB00000DDBC46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BB8E322ACCB00000DDBC46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +32,6 @@
 		83BB8E392ACCB00200DDBC46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83BB8E3C2ACCB00200DDBC46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83BB8E3E2ACCB00200DDBC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83BB8E442ACCB01F00DDBC46 /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExportViewController.swift; path = ../../livephotos/ExportViewController.swift; sourceTree = "<group>"; };
-		83BB8E462ACCB02600DDBC46 /* QuickTimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuickTimeHelper.swift; path = ../../livephotos/QuickTimeHelper.swift; sourceTree = "<group>"; };
 		83BB8E492ACCB09800DDBC46 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		83BB8E4B2ACCB0A300DDBC46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -73,8 +71,7 @@
 			children = (
 				8310A1102ACCBCC400896B11 /* NRNG9365.HEIC */,
 				8310A1112ACCBCC400896B11 /* NRNG9365.MOV */,
-				83BB8E462ACCB02600DDBC46 /* QuickTimeHelper.swift */,
-				83BB8E442ACCB01F00DDBC46 /* ExportViewController.swift */,
+				831593842AD3C36000CB67F6 /* ExportViewController.swift */,
 				83BB8E302ACCB00000DDBC46 /* AppDelegate.swift */,
 				83BB8E322ACCB00000DDBC46 /* SceneDelegate.swift */,
 				83BB8E342ACCB00000DDBC46 /* ViewController.swift */,
@@ -170,9 +167,8 @@
 			files = (
 				83BB8E352ACCB00000DDBC46 /* ViewController.swift in Sources */,
 				83BB8E312ACCB00000DDBC46 /* AppDelegate.swift in Sources */,
-				83BB8E452ACCB01F00DDBC46 /* ExportViewController.swift in Sources */,
 				83BB8E332ACCB00000DDBC46 /* SceneDelegate.swift in Sources */,
-				83BB8E472ACCB02600DDBC46 /* QuickTimeHelper.swift in Sources */,
+				831593852AD3C36000CB67F6 /* ExportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
